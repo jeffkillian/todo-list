@@ -26621,7 +26621,7 @@ function (_React$Component) {
         onChange: this.onChangeName,
         value: this.state.inputValue
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        className: "ml-3",
+        className: "ml-3 btn btn-primary",
         onClick: this.addTodo
       }, "Add new"), this.state.todos.map(function (todo, index) {
         var removeFunc = function removeFunc() {
@@ -26667,7 +26667,9 @@ function (_React$Component2) {
   _createClass(TodoItem, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, this.props.index, ". ", this.props.name, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "pb-1"
+      }, this.props.index, ". ", this.props.name, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         a: true,
         href: "#",
         onClick: this.props.removeFunc,

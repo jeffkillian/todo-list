@@ -21,7 +21,7 @@ export default class TodoList extends React.Component {
     return(
       <div className="border m-3 p-3">
         <input onChange={this.onChangeName} value={this.state.inputValue}></input>
-        <button className="ml-3" onClick={this.addTodo}>Add new</button>
+        <button className="ml-3 btn btn-primary" onClick={this.addTodo}>Add new</button>
         {this.state.todos.map((todo, index) => {
 
           let removeFunc = ()=> {
@@ -66,7 +66,7 @@ class TodoItem extends React.Component {
   
   render(){
     return (
-      <div>
+      <div className="pb-1">
       {this.props.index}. {this.props.name}
         <button a href="#" onClick={this.props.removeFunc} className=" btn btn-danger ml-2"> X</button>
       </div>
