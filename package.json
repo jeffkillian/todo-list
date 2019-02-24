@@ -1,0 +1,36 @@
+{
+  "name": "todo-list",
+  "version": "1.0.0",
+  "description": "A simple React To-do list",
+  "main": "./src/js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently --kill-others \"npm run server\" \"npm run watch:js\"",
+    "server": "http-server -p 8001",
+    "watch:js": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffkillian/todo-list.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeffkillian/todo-list/issues"
+  },
+  "homepage": "https://github.com/jeffkillian/todo-list#readme",
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.3.3",
+    "concurrently": "^4.1.0",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5"
+  }
+}
